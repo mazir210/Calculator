@@ -6,8 +6,9 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Exercise1();
-            Exercise2(4,3);
+            //Exercise1();
+            //Exercise2(4,3);
+            Exercise4(4,2,"Multiplyy");
             Console.ReadLine();
         }
 
@@ -28,6 +29,27 @@ namespace Calculator
             
             var uitkomst = 0;
             uitkomst = number1 * number2;
+            Console.WriteLine(uitkomst);
+
+        }
+        public static void Exercise4(int number1, int number2,string operatie)
+        {
+            int uitkomst;
+            Console.WriteLine("Exercise 4 ");
+
+            if (operatie=="ADD")
+            {
+                uitkomst = number1 + number2;
+
+            }else if (operatie == "Multiply")
+            {
+                uitkomst = number1 * number2;
+            }
+            else
+            {
+                throw new Exception("operatie moet ADD of Multiply Zijn");
+            }
+            
             Console.WriteLine(uitkomst);
 
         }
