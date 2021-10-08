@@ -7,7 +7,7 @@ namespace Calculator
         static void Main(string[] args)
         {
             Exercise1();
-            Exercise2();
+            Exercise2(4,3);
             Console.ReadLine();
         }
 
@@ -22,13 +22,12 @@ namespace Calculator
 
         }
 
-        public static void Exercise2()
+        public static void Exercise2(int number1,int number2)
         {
-            Console.WriteLine("Oef Elbaz monir ");
-            var number1 = 3;
-            var number2 = 4;
+            Console.WriteLine("Exercise 2 ");
+            
             var uitkomst = 0;
-            uitkomst = number1 + number2;
+            uitkomst = number1 * number2;
             Console.WriteLine(uitkomst);
 
         }
