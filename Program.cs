@@ -24,7 +24,7 @@ namespace Calculator
 
         public static void Exercise2(int number1,int number2)
         {
-            Console.WriteLine("Exercise 2 ");
+            Console.WriteLine("Exercise 2 && 3 ");
             
             var uitkomst = 0;
             uitkomst = number1 * number2;
