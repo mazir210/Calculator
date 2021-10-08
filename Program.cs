@@ -6,8 +6,8 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            int number1;
-            int number2;
+            int number1=4;
+            int number2=2;
             
             string operatie;
 
@@ -16,9 +16,23 @@ namespace Calculator
             //Exercise1();
             //Exercise2(4,3);
             //Exercise4(4,2,"Multiply");
-            Exercise5(4, 2, "dd");
+            //Exercise5(4, 2, "dd");
+            Exercise6();
+            
+
 
             Console.ReadLine();
+        }
+
+        public static void Exercise6()
+        {
+            int number1 = 4;
+            int number2 = 2;
+            var multiply = new Multiplay();
+            var adding = new Add();
+            multiply.Calculation(number1, number2);
+            adding.Calculation(number1, number2);
+
         }
         public static void Exercise5(int number1, int number2, string operatie)
         {
