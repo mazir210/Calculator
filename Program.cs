@@ -9,7 +9,11 @@ namespace Calculator
             int number1=4;
             int number2=2;
             
-            string operatie;
+            string operatieAdd = "ADD";
+            string operatieMulti = "Multiply";
+            Startup(operatieAdd, number1, number2);
+
+            Startup(operatieMulti, number1, number2);
 
 
             //Exercise5(number1,number2,operator);
@@ -17,11 +21,17 @@ namespace Calculator
             //Exercise2(4,3);
             //Exercise4(4,2,"Multiply");
             //Exercise5(4, 2, "dd");
-            Exercise6();
-            
+            //Exercise6();
+
 
 
             Console.ReadLine();
+        }
+        public static void Startup(string operatie, int nr1, int nr2)
+        {
+            var result = new Calculator().Bereken(operatie, nr1, nr2);
+
+            new Displayer().Display(operatie, result, nr1, nr2);
         }
 
         public static void Exercise6()
@@ -52,7 +62,7 @@ namespace Calculator
                     Console.WriteLine("Invalid Choice");
                     throw new Exception("operatie moet ADD of Multiply Zijn");
 
-                    break;
+                    
 
             }
            
